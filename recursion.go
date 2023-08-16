@@ -15,10 +15,15 @@ func cube(m int) int {
 }
 
 func main() {
+	//anonymous function.
+	d := func(l int, j int)int  {
+		return l * j
+	}(9, 34)
 	m := 3
 	total := cube(m)
 	fmt.Println("The cube of ", m, "is:", total)
 	n := 5
 	result := factorial(n)
 	fmt.Println("Factorial of", n, "is:", result)
+	fmt.Println(d)
 }
