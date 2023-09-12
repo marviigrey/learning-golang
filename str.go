@@ -35,6 +35,7 @@ func calcTri(t Triangle) {
 }
 
 func main() {
+
 	c := Circle{x: 5, y: 5, radius: 5, area: 0}
 	t := Triangle{h: 4, b: 4}
 	fmt.Printf("%+v \n", c)
