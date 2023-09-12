@@ -1,0 +1,8 @@
+1. Write a go program that will store the values of your name and age in variables or constants and will print the variables you defined: My name is ___ and I'm ___ years old
+You are delivering packages to customers. You have 100 packages to deliver.
+
+2. Print the number of package you are going to deliver For example: "I have 100 packages to deliver"
+
+You have delivered 20 packages. Print the remaining packages to deliver
+
+The packages are going to be distributed equally between 4 customers. Print how many packages each customer receives (while mentioning the number of customers)
