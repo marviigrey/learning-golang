@@ -1,4 +1,4 @@
-theses are simple exercises that will help strengthen my hands in golang. Here is the link to the
+These are simple exercises that will help strengthen my hands in golang. Here is the link to the
 repo where i found the excercise: "https://github.com/bregman-arie/go-exercises"
 1. Write a go program that will store the values of your name and age in variables or constants and will print the variables you defined: My name is ___ and I'm ___ years old
 You are delivering packages to customers. You have 100 packages to deliver.
@@ -8,3 +8,5 @@ You are delivering packages to customers. You have 100 packages to deliver.
 You have delivered 20 packages. Print the remaining packages to deliver
 
 The packages are going to be distributed equally between 4 customers. Print how many packages each customer receives (while mentioning the number of customers)
+
+3. Display data types.

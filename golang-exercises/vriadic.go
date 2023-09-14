@@ -2,15 +2,26 @@ package main
 
 import "fmt"
 
-func myFunc(student string, subject ...string){
-    fmt.Println("hello my name is %s", student, "my subjects are ")
-    for _, sum := range subject{
-        fmt.Printf("%s", sum)
-    }
+func calc(n int) int {
+	if n == 1 {
+		return 1
+	}
+	return n * calc(n+1)
+}
+func recursion(n int) int {
+	if n == 0 {
+		return 1
+	}
+	return n * recursion(n+1)
+
 }
 
 func main() {
-    
-    
-    myFunc("marvellous", "physics", "maths")
+	d := 6
+	calc(d)
+	fmt.Print(calc(d))
+	p := 8
+	recursion(p)
+	fmt.Println(recursion(p))
+
 }
