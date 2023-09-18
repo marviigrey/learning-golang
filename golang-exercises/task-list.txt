@@ -10,3 +10,24 @@ You have delivered 20 packages. Print the remaining packages to deliver
 The packages are going to be distributed equally between 4 customers. Print how many packages each customer receives (while mentioning the number of customers)
 
 3. Display data types.
+
+4. Task four is a simple calculator that can calculate the area,Diameter, and perimeter of
+   circle. It can also calculate the area of a triangle. We basically used simple functions in
+   the task-four.go file but to reduce lines of code and make it shorter we used high order
+   functions to help simplify our code. the modified part of this code can be found in the 
+   compare.go file in this directory.
+   
+5. Modify the following program to ask for a name and an age
+   Modify the print statement accordingly
+   
+   package main
+
+   import "fmt"
+
+   func main() {
+    fmt.Printf("Your name is ___ and your age is ___")
+   }
+   
+Task-6: Using the time package, print The time now is: <TIME>
+Using the math/rand package, generate random integer between 0 and 100
+Using the math package calculate the square of 9.
