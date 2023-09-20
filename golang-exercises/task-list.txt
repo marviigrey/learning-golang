@@ -1,7 +1,7 @@
 These are simple exercises that will help strengthen my hands in golang. Here is the link to the
 repo where i found the excercise: "https://github.com/bregman-arie/go-exercises"
 1. Write a go program that will store the values of your name and age in variables or constants and will print the variables you defined: My name is ___ and I'm ___ years old
-You are delivering packages to customers. You have 100 packages to deliver.
+You are delivering packages to customers. You hasve 100 packages to deliver.
 
 2. Print the number of package you are going to deliver For example: "I have 100 packages to deliver"
 
