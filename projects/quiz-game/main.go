@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var name string
-	score := 0
+	score := 0 //named a variable to help us calculate or score as we answer questions correctly.
 	num_of_ques := 3
 	fmt.Printf("Welcome to my quiz game!, please type in your name: ") //print a new line after thr ptogram
 	//fmt.Printf("hello %v, how are you doing? you're %v!", name, age) //%v is a place holder for name,we mainly
