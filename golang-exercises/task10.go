@@ -6,13 +6,13 @@ func main() {
  pizza := [] string {}
      
     pizza = append(pizza, "hamburger", "salad")
-	for i := range pizza  {
-		fmt.Printf("food: ", i)
+	for _, value := range pizza  {
+		fmt.Printf("food: %v\n", value)
 	}
 	shapes := [3]string{"square", "circle", "triangle"}
-	for i := range shapes{
+	for index, value := range shapes{
 		
-		fmt.Printf("This is %v and its index in the array is ",  shapes, i)
+		fmt.Printf("This is %v and its index in the array is %v\n",  value, index)
 	}
 	var name string
 	var age int
