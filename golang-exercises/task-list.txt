@@ -31,3 +31,36 @@ The packages are going to be distributed equally between 4 customers. Print how 
 Task-6: Using the time package, print The time now is: <TIME>
 Using the math/rand package, generate random integer between 0 and 100
 Using the math package calculate the square of 9.
+
+task 7: Create an empty array of integers of size 10
+Create an arrays of strings and fill it with 4 different strings
+Can you mix different data types in one array?
+You've created an empty array with the size of 10. Once declared can you add items to it? Can you add 50 items?
+There is an array called 'games'. Assign the string "Donkey Kong" to the first place in the array
+There is an array called "movies". Print the following:
+The array itself
+The second item in the array
+The length of the array
+
+task 8: Why do we need slices if we have arrays?
+How to define an empty slice of strings called someSlice?
+What the following lines does? append(someSlice, 'abc')
+How to retrieve the first element of the slice someSlice?
+
+task 9:
+Create an empty map of string keys and string values called "profile".
+Add the following data to the map
+First Name (provided string)
+Last Name (provided as string)
+Age (provided as int)
+
+task10: 
+Write a loop to ask the name and age from a user and print 
+"Your name is ___ and your age is ___ years old"
+This should be infinite loop
+Define the following array "pizza"}
+Append to it the following item: "hamburger"
+Append to it the following item: "salad"
+Iterate over the list and print for each item Food: <Food name>. Make sure to replace <Food name> with item from the array
+Define the following fixed array of 3 items: {square, circle, triangle}
+Iterate over it and print for each item the following: This is <ITEM> and its index in the array is <INDEX>
