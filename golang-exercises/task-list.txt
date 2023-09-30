@@ -64,3 +64,280 @@ Append to it the following item: "salad"
 Iterate over the list and print for each item Food: <Food name>. Make sure to replace <Food name> with item from the array
 Define the following fixed array of 3 items: {square, circle, triangle}
 Iterate over it and print for each item the following: This is <ITEM> and its index in the array is <INDEX>
+
+Task11:
+Define the following list {'red', 'green', 'blue'}
+Iterate over the list and print each item on its own line
+Define a variable with a value of 1 and using a for loop add 3 3 to the variable's value, every loop. Make sure to define the loop in a way where it stops once the variable value is bigger than 100
+Print the final value
+
+Task12: 
+Define the following
+A variable called sum with the value of 0
+A for loop that iterates a variable called i starts with the value 0 until it reaches 100 (the variable's value is incremented by 1 each loop)
+If the value of i is 50, skip increasing the value of sum by i
+each loop, make sure to add the value of i to the value of sum
+after the loop definition, add print statement to print the value of sum
+What's the value of sum?
+
+Task 13:
+
+Define a function that gets two integers, adds them and returns the result
+
+Make sure to also write code that executes the function.
+
+task 15: We are building a software for a store that sells three 
+products: apples, bananas, and oranges. We need to write a 
+function that takes the name of a product and its price 
+as arguments and returns the price of the product with a discount
+applied. The discount should be 10% for apples and 20% for bananas. 
+Oranges do not have a discount.
+
+
+A Go file is located at /root/code/product directory.
+
+
+package main
+
+import "fmt"
+
+func discountedPrice(product string, price float64) float64 {
+    // your code goes here
+}
+
+func main() {
+    fmt.Println(discountedPrice("apples", 100))
+    fmt.Println(discountedPrice("orange", 100))
+    fmt.Println(discountedPrice("bananas", 100))
+    fmt.Println(discountedPrice("bananas", 100))
+    fmt.Println(discountedPrice("oranges", 100))
+}
+
+
+Expected Output:
+
+
+
+90
+100
+80
+80
+100
+
+
+
+Task 17: 
+In this question, we are building a tool that analyzes the 
+frequency of words in a given text. You need to implement a 
+function wordFrequency that receives a string and returns a map
+with the frequency of each word in the string.
+
+
+A Go file is located at /root/code/frequency directory.
+
+
+
+package main
+
+import (
+    "fmt"
+    "strings"
+)
+
+func wordFrequency(text string) map[string]int {
+    // TODO: implement this function
+}
+
+func main() {
+    text := "The quick brown fox jumps over the lazy dog"
+    fmt.Println(wordFrequency(text))
+
+}
+
+Task 18:
+We are working on a project for a grocery store. The store has 
+a list of items that are currently in stock, and we need to
+implement a function that will return a list of items that are
+in a given price range.
+
+
+A Go file is located at /root/code/fruit directory.
+
+
+
+package main
+
+import "fmt"
+
+type Item struct {
+    Name  string
+    Price float64
+}
+
+func getItemsInPriceRange(items []Item, minPrice, maxPrice float64) []Item {
+    // your code goes here
+}
+
+func main() {
+    items := []Item{
+        {Name: "Apple", Price: 0.5},
+        {Name: "Banana", Price: 0.25},
+        {Name: "Orange", Price: 0.75},
+        {Name: "Pineapple", Price: 1.5},
+    }
+
+    fmt.Println(getItemsInPriceRange(items, 0.0, 1.0))
+    fmt.Println(getItemsInPriceRange(items, 0.5, 1.0))
+    fmt.Println(getItemsInPriceRange(items, 0.75, 1.5))
+}
+
+
+Expected Output:
+
+
+[{Apple 0.5} {Banana 0.25} {Orange 0.75}]
+[{Apple 0.5} {Orange 0.75}]
+[{Orange 0.75} {Pineapple 1.5}]
+
+Task 19:
+We are working on a program that allows users to store and retrieve information about their favourite books. We have implemented a Book struct to store the information for the book.
+
+
+You need to implement a function that will change the value of the Pages field for a given Book.
+
+
+Also, make the required changes in the main function.
+
+
+A Go file is located at /root/code/book directory.
+
+
+package main
+
+type Book struct {
+    Title  string
+    Author string
+    Pages  int
+}
+
+func updatePages(book *Book, pages int) {
+    // your code goes here
+}
+
+func main() {
+
+    /*
+        Create 3 Book Structs with the following data:
+
+        Book 1:
+        Title: "The Great Gatsby"
+        Author: "F. Scott Fitzgerald"
+        Pages: 180
+
+        Book 2
+        Title: "To Kill a Mockingbird"
+        Author: "Harper Lee"
+        Pages: 281
+
+        Book 3
+        Title: "Pride and Prejudice"
+        Author: "Jane Austen"
+        Pages: 279
+    */
+
+    // your code for creating struct objects goes here
+
+    /*
+        Update the information for Books as following:
+
+        Book 1: Updates Page Count to 210
+        Book 2: Updates Page Count to 250
+        Book 3: Updates Page Count to 295
+
+    */
+
+    // your code for function calls to updatePages goes here
+
+    /*
+        Print all the struct objects
+        fmt.Println(book)
+    */
+
+    // your code for printing objects goes here
+}
+
+
+Expected Output:
+
+
+&{The Great Gatsby F. Scott Fitzgerald 210}
+&{To Kill a Mockingbird Harper Lee 250}
+&{Pride and Prejudice Jane Austen 295}
+
+Task 20:
+We are building a program that helps users track their expenses. We need to create a struct called Expense to store information about an individual expense, including the name of the expense, the amount, and the date.
+
+
+We need to create a method called Total that calculates the total amount spent on expenses.
+
+
+Also, we need to create a method called getName on Expense struct that returns the name of the Expense.
+
+
+A Go file is located at /root/code/store/ directory.
+
+
+package main
+
+import "fmt"
+
+// Declare the Expense struct here
+// your code goes here
+
+// Implement the Total method to calculate the total amount spent
+// your code goes here
+
+// Implement the getName method on the Expense struct here
+// your code goes here
+
+func main() {
+    expenses := []Expense{
+        Expense{"Grocery", 50.0, "2022-01-01"},
+        Expense{"Gas", 30.0, "2022-01-02"},
+        Expense{"Restaurant", 40.0, "2022-01-03"},
+    }
+
+    fmt.Println(Total(expenses))
+    fmt.Println(expenses[0].getName())
+}
+
+
+Expected Output:
+
+
+
+120
+Grocery
+
+Task 20:
+Calculate the Area of a Circle: Write a program that takes the radius of a circle as input from the user and calculates its area. You can use the formula area = π * r * r, where π (pi) is approximately 3.14159.
+
+Temperature Converter: Create a program that converts temperatures between Celsius and Fahrenheit. Allow the user to input a temperature in one unit and convert it to the other.
+
+Sum of Integers: Write a program that calculates the sum of all integers from 1 to N, where N is provided by the user as input.
+
+Factorial Calculator: Build a program that calculates the factorial of a given positive integer. The factorial of a number N is the product of all positive integers from 1 to N.
+
+Palindrome Checker: Create a function that checks if a given string is a palindrome (reads the same forwards and backward), ignoring spaces and punctuation.
+
+Guess the Number: Implement a simple number guessing game where the computer generates a random number between 1 and 100, and the player has to guess it. Provide hints like "too high" or "too low" after each guess.
+
+To-Do List: Develop a basic to-do list application that allows users to add, remove, and view tasks. You can use slices or maps to store the tasks.
+
+File Reader and Writer: Write a program that reads data from a file, performs some operation on it (e.g., word count), and then writes the result back to another file.
+
+HTTP Server: Create a simple HTTP server using the net/http package. You can start with a server that responds with "Hello, World!" to incoming HTTP requests and then expand it to handle different routes and actions.
+
+Basic Structs and Methods: Define a struct representing a simple object (e.g., a person with a name and age) and create methods to perform operations on it, like printing the object's details.
+
+Error Handling: Practice error handling in Go by creating a function that may return an error. Learn how to handle errors gracefully using the error type and the if err != nil pattern.
