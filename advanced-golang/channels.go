@@ -7,7 +7,7 @@ import (
 
 func main() {
 	ch := make(chan string) //channel "ch" that can only transfer data type string.
-	go sell(ch)
+	go sell(ch)             //run the go routine using the ch channel to send and receive data.
 	go buy(ch)
 	time.Sleep(1 * time.Second)
 }
@@ -23,4 +23,5 @@ func buy(ch chan string) {
 	fmt.Println("waiting for the data")
 	val := <-ch
 	fmt.Println("Received data: ", val)
+	fmt.Println(len(ch))
 }
