@@ -1,11 +1,13 @@
 package decrypt
 
 func Nimbus(str string) string {
-	decryptedStr := ""
-	for _, c := range decryptedStr {
+	descryptedStr := ""
+
+	for _, c := range str {
 		asciiCode := int(c)
 		character := string(asciiCode - 3)
-		decryptedStr := character
+		descryptedStr += character
+
 	}
-	return decryptedStr
+	return descryptedStr
 }

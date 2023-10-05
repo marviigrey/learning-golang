@@ -1,4 +1,6 @@
 github.com/google/uuid v1.0.0 h1:b4Gk+7WdP/d3HZH8EJsZpvV7EtDOgaZLtnaNGIu1adA=
 github.com/google/uuid v1.0.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/marviigrey/learning-golang/projects/cryptit v0.0.0-20231005004335-f0fb98b787f0 h1:VwsEfUsZ8Co7V6gIQqYZ2EK/iFgKpGUGXEz+hKslfvU=
+github.com/marviigrey/learning-golang/projects/cryptit v0.0.0-20231005004335-f0fb98b787f0/go.mod h1:ZzBE1kON3UvjeQESN5eKdfLG4Kol2TqU3dzFz8IR+yc=
 github.com/pborman/uuid v1.2.1 h1:+ZZIw58t/ozdjRaXh/3awHfmWRbzYxJoAdNJxe/3pvw=
 github.com/pborman/uuid v1.2.1/go.mod h1:X/NO0urCmaxf9VXbdlT7C2Yzkj2IKimNn4k+gtPdI/k=
