@@ -9,12 +9,13 @@ import (
         fmt.Println(path)
         fmt.Println(filepath.IsAbs("dir1"))
         fmt.Println(filepath.IsAbs(path))
-        fileInfo, err := os.Stat("/home/ec2-user/environment/temp.txt")
+        fileInfo, err := os.Stat("/home/ec2-user/environment/learning-golang/test")
         if err != nil {
+            fmt.Println(err)
+          // path :
+        }
             fmt.Println(fileInfo.Name())
             fmt.Println(fileInfo.Size())
             fmt.Println(fileInfo.Mode())
             fmt.Println(fileInfo.IsDir())
-            
-        }
     }
