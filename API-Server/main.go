@@ -52,5 +52,5 @@ func handledRequests() {
 	myRouter.HandleFunc("/products", returnAllProducts)
 	myRouter.HandleFunc("/product/{id}", getProduct)
 	myRouter.HandleFunc("/", homepage)
-	http.ListenAndServe(":8081", myRouter)
+	http.ListenAndServe(":8083", myRouter)
 }
